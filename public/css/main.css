@@ -1,0 +1,63 @@
+body {
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.notes {
+    font-family: "Rhythms";
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.rhythmContainer {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 180px;
+}
+
+.noteGroup {
+    display: inline-block;
+    width: 23%;
+}
+
+.controlpanel {
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.controlpanel div {
+    text-align: center;
+}
+
+.grey {
+    position: fixed;
+    background-color: #F0F0F0;
+    height: 130px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 20px #888;
+}
+
+.labelNotes {
+    font-family: "Rhythms";
+}
+
+@media screen and (max-width: 1450px) {
+    .rhythmContainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .rhythmContainer {
+        grid-template-columns: 1fr;
+    }
+}
